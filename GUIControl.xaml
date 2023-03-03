@@ -1,0 +1,38 @@
+﻿<UserControl
+    x:Class="wpfgui.GUIControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Margin="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.4*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="30" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" VerticalAlignment="Center">
+            <TextBlock
+                x:Name="LabelTextBlock"
+                FontSize="12"
+                FontWeight="DemiBold"
+                Foreground="DarkGray">
+                <TextBlock.Effect>
+                    <DropShadowEffect
+                        BlurRadius="1"
+                        Direction="315"
+                        Opacity="0.5"
+                        ShadowDepth="1"
+                        Color="Black" />
+                </TextBlock.Effect>
+                Label
+            </TextBlock>
+        </Grid>
+        <Grid
+            x:Name="InputContent"
+            Grid.Column="1"
+            VerticalAlignment="Center" />
+        <Grid
+            x:Name="DecoratorContent"
+            Grid.Column="2"
+            VerticalAlignment="Center"
+            Visibility="Hidden" />
+    </Grid>
+</UserControl>
