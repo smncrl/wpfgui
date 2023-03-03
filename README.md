@@ -1,6 +1,7 @@
 ﻿# wpfgui
 
 Super-simple gui generation for wpf applications.
+Full demo available here: [https://github.com/smncrl/wpfguiDemo](https://github.com/smncrl/wpfguiDemo)
 
 ## Usage
 
